@@ -1,3 +1,4 @@
+#!/usr/bin/python -tt
 """
 Este modulo de ejemplo muestra varios tipos de documentaicon disponibles
 con pydoc. Para generar la documentacion en html usar:
@@ -6,39 +7,36 @@ con pydoc. Para generar la documentacion en html usar:
 
 """
 
-class Persona(object):
+class Person:
     """
     Esta clase encapsula las propiedades de un bailarin, que 
     aveces sabe bailar tango y aveces no, por defecto ninguna 
     persona sabe bailar tango.
     """
 
-    nombre=""
-    sabeBailarTango=False
-    
-    def __init__(self, nombre, sabeBailarTango):
-        self.nombre = nombre
-        self.sabeBailarTango=sabeBailarTango
+    def __init__(self, name, danceTango):
+        self.name = name
+        self.danceTango=danceTango
         
-    def bailarTango(self):
+    def dancingTango(self):
       
-      if self.sabeBailarTango :
-        porPantalla ("soy "+self.nombre+" y estoy bailando a lo loco, unas milogas pebeta!!!!")
+      if self.danceTango :
+        toScreen ("soy "+self.name+" y estoy bailando a lo loco, unas milogas pebeta!!!!")
       else:
-        porPantalla ("soy "+self.nombre+" y tengo que ir a la Viruta a tomar unas clases")
+        toScreen ("soy "+self.name+" y tengo que ir a la Viruta a tomar unas clases")
     
 
-def porPantalla(mensaje):
+def toScreen(mensaje):
     """
     Imprime mesaje por pantalla
     """
     print mensaje
 
 if __name__ == '__main__':
-    johnDoe   = Persona('John Doe', True)
-    pepeMonge = Persona('Pepe Monge', False)
+    johnDoe   = Person('John Doe', True)
+    pepeMonge = Person('Pepe Monge', False)
     
-    johnDoe.bailarTango()
-    pepeMonge.bailarTango()
-    
-    
+    johnDoe.dancingTango()
+    pepeMonge.dancingTango()
+#    
+#    
