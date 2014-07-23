@@ -1,4 +1,7 @@
-#!/usr/bin/python -tt
+#!/usr/bin/env python 
+# -*- coding: utf-8 -*-
+
+
 """
 Este modulo de ejemplo muestra varios tipos de documentaicon disponibles
 con pydoc. Para generar la documentacion en html usar:
@@ -7,7 +10,7 @@ con pydoc. Para generar la documentacion en html usar:
 
 """
 
-class Person:
+class Dancer:
     """
     Esta clase encapsula las propiedades de un bailarin, que 
     aveces sabe bailar tango y aveces no, por defecto ninguna 
@@ -32,11 +35,15 @@ def toScreen(mensaje):
     """
     print mensaje
 
+
+
 if __name__ == '__main__':
-    johnDoe   = Person('John Doe', True)
-    pepeMonge = Person('Pepe Monge', False)
+
+    michaelJackson  = Dancer('Michael Jackson', True)
+    mickJagger      = Dancer('Mick Jagger'    , True)
+    pepeMonge     = Dancer('La Mona Gimenez'   ,False)
     
-    johnDoe.dancingTango()
+    michaelJackson.dancingTango()
+    mickJagger.dancingTango()
     pepeMonge.dancingTango()
-#    
 #    

@@ -1,4 +1,6 @@
-#!/usr/bin/python -tt
+#!/usr/bin/env python 
+# -*- coding: utf-8 -*-
+
 
 #PROPONGA MEJORAS PARA QUE EL CODIGO SEA MAS LEJIBLES POR HUMANOS
 

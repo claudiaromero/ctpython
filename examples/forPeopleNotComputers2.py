@@ -1,4 +1,7 @@
-#!/usr/bin/python -tt
+#!/usr/bin/env python 
+# -*- coding: utf-8 -*-
+
+
 ############ EJEMPLO 2 ############ 
  
 #SO SO SOLUTION

@@ -1,4 +1,6 @@
-#!/usr/bin/python -tt
+#!/usr/bin/env python 
+# -*- coding: utf-8 -*-
+
  
 ############ EJEMPLO 1 ############ 
  
@@ -7,11 +9,12 @@ t=10
 #calculates square root of given number 
 #using Newton-Raphson method
 def abc( a):
-    r = a / 2
-    while ( abs( r - (a/r) ) > t ):
-      r = 0.5 * ( r + (a/r) )
-    
-    print  "r = " + str(r) 
+
+  r = a / 2
+  while ( abs( r - (a/r) ) > t ):
+    r = 0.5 * ( r + (a/r) )
+
+  return r 
  
  
  
@@ -20,8 +23,19 @@ def abc( a):
 #Above code is calculating square root using Newton-Raphson method and instead of writing comment you can just rename your method and variable as follows:
  
 def squareRoot( num):
-    root = num/ 2
-    while ( abs(root - (num/ root) ) > t ):
-      r = 0.5 * (root + (num/ root))
- 
-    print " root = " + str(root)
+  root = num/ 2
+
+  while ( abs(root - (num/ root) ) > t ):
+    r = 0.5 * (root + (num/ root))
+
+  return root
+    
+    
+
+if __name__ == "__main__":
+
+
+  print  print " root abc = " + str(abc(10))
+  print  print " root squareRoot = " + str(squareRoot(10))
+
+
